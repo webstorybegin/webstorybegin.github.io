@@ -9,7 +9,7 @@ import { data } from 'assets/data/data';
 
 import { makeStyles } from '@material-ui/styles';
 
-import cn from 'classnames';
+import cn from 'classnames'
 
 const useStyles = makeStyles({
 	root: {
@@ -81,22 +81,9 @@ const useStyles = makeStyles({
 		width: '100%',
 		display: 'flex',
 		alignItems: 'center',
-		transform: 'translateY(20%)',
-		transition: '.5s linear 0s',
-	},
-	show: {
-		transform: 'translateY(0)',
 	},
 	hide: {
 		display: 'none',
-	},
-	win: {
-		color: '#D0D0D8',
-		width: 500,
-	},
-	burger: {
-		position: 'absolute',
-		right: 0,
 	},
 });
 
@@ -110,6 +97,8 @@ export const Quiz: FC<IQuiz> = ({ start, setStart }) => {
 	const [earned, setEarned] = useState('$0');
 	const [stop, setStop] = useState(false);
 	const [burgerMenu, setBurgerMenu] = useState(false);
+
+  console.log('burger', burgerMenu)
 
 	const { questions } = data;
 	const { question, money } = questions;
@@ -137,7 +126,7 @@ export const Quiz: FC<IQuiz> = ({ start, setStart }) => {
 							burgerMenu={burgerMenu}
 						/>
 					</div>
-					<div className={burgerMenu ? cn(classes.activeMenu, classes.show) : classes.winning}>
+					<div className={burgerMenu ? classes.activeMenu : classes.winning}>
 						<ul className={classes.amountList}>
 							{money &&
 								money.map((amount) => (

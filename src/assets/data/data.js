@@ -14,22 +14,22 @@ export const data = {
         text: "Who write the Dark Tower series of novels?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Nick Martin",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Stiven King",
             correct: true,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Johanna Lindsey",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Agatha Christie",
             correct: false,
           },
@@ -40,22 +40,22 @@ export const data = {
         text: "In what city did Stephen King grow up?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Portland",
             correct: true,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Chicago",
             correct: false,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Aurora",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "West Jordan",
             correct: false,
           },
@@ -66,22 +66,22 @@ export const data = {
         text: "What genre of books does he write?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Children's tales",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Horrors",
             correct: true,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Fantastic",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Comedy",
             correct: false,
           },
@@ -92,22 +92,22 @@ export const data = {
         text: "How many books in the Dark Tower series?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "3",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "5",
             correct: false,
           },
           {
-            option: 'C',
+            option: "C",
             text: "9",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "7",
             correct: true,
           },
@@ -118,22 +118,22 @@ export const data = {
         text: "What is the name of the main character in The Dark Tower?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Noah",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Mason",
             correct: false,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Roland",
             correct: true,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Ethan",
             correct: false,
           },
@@ -144,22 +144,22 @@ export const data = {
         text: "What was the name of Roland's boy companion?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Jake",
             correct: true,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Nielson",
             correct: false,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Amodey",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Carter",
             correct: false,
           },
@@ -170,22 +170,22 @@ export const data = {
         text: "Jake had a little animal, what was his name?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Buffalo",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Ysh",
             correct: true,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Echion ",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Aben",
             correct: false,
           },
@@ -196,22 +196,22 @@ export const data = {
         text: "How old was Jake?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "15",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "8",
             correct: false,
           },
           {
-            option: 'C',
+            option: "C",
             text: "14",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "11",
             correct: true,
           },
@@ -222,22 +222,22 @@ export const data = {
         text: "What is name of the supersonic monorail passenger train?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Retched Clank",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Blaine Mono",
             correct: true,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Oliver Stone",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Bromine Iron",
             correct: false,
           },
@@ -248,22 +248,22 @@ export const data = {
         text: "Name of the main villain?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Eddie Dean",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Randall Flagg",
             correct: true,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Cuthbert Allgood",
             correct: false,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Father Donald Callaghan",
             correct: false,
           },
@@ -274,22 +274,22 @@ export const data = {
         text: "What is the name of Roland Diskein's beloved girl?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "Angel Dean",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Asuna Mag",
             correct: false,
           },
           {
-            option: 'C',
+            option: "C",
             text: "Susan Delgado",
             correct: true,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Margaret Eisenhart",
             correct: false,
           },
@@ -300,22 +300,22 @@ export const data = {
         text: "The most important quote from these books?",
         answers: [
           {
-            option: 'A',
+            option: "A",
             text: "If you don't fight, you won't get there",
             correct: false,
           },
           {
-            option: 'B',
+            option: "B",
             text: "Remember, a loose tongue sinks ships",
             correct: false,
           },
           {
-            option: 'C',
+            option: "C",
             text: "There are other worlds besides this one",
             correct: true,
           },
           {
-            option: 'D',
+            option: "D",
             text: "Endings are heartless. Endings are another synonym for the word goodbye",
           },
         ],

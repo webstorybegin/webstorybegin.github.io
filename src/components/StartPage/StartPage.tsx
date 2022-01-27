@@ -1,50 +1,50 @@
-import { FC } from 'react';
-import { PrimaryButton } from 'components/ui/buttons/PrimaryButton/PrimaryButton';
+import { FC } from "react";
+import { PrimaryButton } from "components/ui/buttons/PrimaryButton/PrimaryButton";
 import { data } from "assets/data/data";
 
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: '0 10px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: "0 10px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     "& img": {
       marginRight: 30,
-      maxWidth: '100%',
+      maxWidth: "100%",
     },
-    [theme.breakpoints.down('md')]: {
-      flexWrap: 'wrap',
-      justifyContent: 'center',
-      textAlign: 'center',
+    [theme.breakpoints.down("md")]: {
+      flexWrap: "wrap",
+      justifyContent: "center",
+      textAlign: "center",
       "& img": {
         marginBottom: 42,
         marginRight: 0,
-        maxWidth: '75%'
+        maxWidth: "75%",
       },
-    }
+    },
   },
   rootItem: {
-    width: '50%',
+    width: "50%",
     "@media (max-width: 600px)": {
-      width: '100%'
+      width: "100%",
     },
   },
   mainTitle: {
     fontSize: 56,
     fontWeight: 600,
-    color: '#1C1C21',
-    lineHeight: '116%',
+    color: "#1C1C21",
+    lineHeight: "116%",
     marginBottom: 65,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: 32,
-    }
+    },
   },
 }));
 
 interface IStartPage {
-  readonly setStart: (setStart: boolean) => void,
+  readonly setStart: (setStart: boolean) => void;
 }
 
 export const StartPage: FC<IStartPage> = ({ setStart }) => {
@@ -59,10 +59,7 @@ export const StartPage: FC<IStartPage> = ({ setStart }) => {
       <img src={src} alt={alt} />
       <div className={classes.rootItem}>
         <h1 className={classes.mainTitle}>{title}</h1>
-        <PrimaryButton 
-          setStart={setStart}
-          text={buttonText} 
-        />
+        <PrimaryButton setStart={setStart} text={buttonText} />
       </div>
     </div>
   );

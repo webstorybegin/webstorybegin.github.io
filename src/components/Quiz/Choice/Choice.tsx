@@ -12,16 +12,16 @@ const useStyles = makeStyles({
       marginBottom: 450,
       "@media (max-width: 768px)": {
         marginBottom: 100,
-      }
+      },
     },
     "@media (max-width: 950px)": {
       fontSize: 18,
-      textAlign: 'center',
-    }
+      textAlign: "center",
+    },
   },
   answers: {
     display: "grid",
-    alignItems: 'center',
+    alignItems: "center",
     gridTemplateColumns: "350px 350px",
     gridGap: 35,
     "@media (max-width: 1170px)": {
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
     },
     "@media (max-width: 425px)": {
       gridTemplateColumns: "repeat(auto-fill, minmax(250px,  1fr))",
-    }
+    },
   },
   answerLine: {
     position: "relative",
@@ -40,12 +40,12 @@ const useStyles = makeStyles({
       width: "114%",
       background: "#D0D0D8",
       top: "50%",
-      left: '-7%',
+      left: "-7%",
     },
   },
   answer: {
     position: "relative",
-    display: 'flex',
+    display: "flex",
     cursor: "pointer",
     background: "#fff",
     border: "1px solid #D0D0D8",
@@ -102,16 +102,16 @@ const useStyles = makeStyles({
     },
   },
   hide: {
-    display: 'none'
+    display: "none",
   },
 });
 
 interface IChoice {
-  readonly question: string,
-  readonly questionNumber: number,
-  readonly setQuestionNumber: { (next: any) }
-  readonly burgerMenu: boolean,
-  readonly setStop: (setStop: boolean) => void,
+  readonly question: string;
+  readonly questionNumber: number;
+  readonly setQuestionNumber: { (next: any) };
+  readonly burgerMenu: boolean;
+  readonly setStop: (setStop: boolean) => void;
 }
 
 export const Choice: FC<IChoice> = ({
@@ -119,7 +119,7 @@ export const Choice: FC<IChoice> = ({
   questionNumber,
   setQuestionNumber,
   burgerMenu,
-  setStop
+  setStop,
 }) => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectAnswer, setSelectAnswer] = useState(null);
@@ -145,7 +145,7 @@ export const Choice: FC<IChoice> = ({
         setQuestionNumber((next) => next + 1);
         setSelectAnswer(null);
       } else {
-        setStop(true)
+        setStop(true);
       }
     });
   };
@@ -156,9 +156,7 @@ export const Choice: FC<IChoice> = ({
     <div>
       <div className={classes.question}>
         <h1>{currentQuestion?.text}</h1>
-        <div className={
-          burgerMenu ? classes.hide : classes.answers
-        }>
+        <div className={burgerMenu ? classes.hide : classes.answers}>
           {currentQuestion &&
             currentQuestion?.answers.map((item, i) => (
               <div key={i} className={classes.answerLine}>

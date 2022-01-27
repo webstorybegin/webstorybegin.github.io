@@ -1,35 +1,35 @@
-import { FC } from 'react';
-import { PrimaryButton } from 'components/ui/buttons/PrimaryButton/PrimaryButton';
+import { FC } from "react";
+import { PrimaryButton } from "components/ui/buttons/PrimaryButton/PrimaryButton";
 import { data } from "assets/data/data";
 
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
   root: {
-    padding: '0 10px',
+    padding: "0 10px",
     width: "100%",
     display: "flex",
     justifyContent: "center",
     background: "#F5F5F7",
-    height: '100vh',
+    height: "100vh",
     "& img": {
-      maxWidth: '100%',
+      maxWidth: "100%",
       "@media (max-width: 860px)": {
-        maxWidth: '75%'
-      }
+        maxWidth: "75%",
+      },
     },
   },
   rootItem: {
     display: "flex",
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
   },
   result: {
-    textAlign: 'center',
+    textAlign: "center",
     "@media (max-width: 740px)": {
-      textAlign: 'center',
-    }
+      textAlign: "center",
+    },
   },
   mainTitle: {
     fontSize: 32,
@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     marginBottom: 20,
     "@media (max-width: 740px)": {
       fontSize: 18,
-    }
+    },
   },
   earned: {
     fontSize: 56,
@@ -48,21 +48,17 @@ const useStyles = makeStyles({
     marginBottom: 60,
     "@media (max-width: 740px)": {
       fontSize: 32,
-    }
+    },
   },
 });
 
 interface IEndPage {
-  readonly start: boolean,
-  readonly setStart: () => void,
-  readonly earned: string,
+  readonly start: boolean;
+  readonly setStart: () => void;
+  readonly earned: string;
 }
 
-export const EndPage: FC<IEndPage> = ({ 
-  start, 
-  setStart, 
-  earned,  
-}) => {
+export const EndPage: FC<IEndPage> = ({ start, setStart, earned }) => {
   const { mainImage, result } = data;
   const { src, alt } = mainImage;
   const { title, buttonText } = result;
@@ -76,11 +72,7 @@ export const EndPage: FC<IEndPage> = ({
         <div className={classes.result}>
           <p className={classes.mainTitle}>{title}</p>
           <p className={classes.earned}>{earned} earned</p>
-          <PrimaryButton 
-            start={start} 
-            setStart={setStart} 
-            text={buttonText} 
-          />
+          <PrimaryButton start={start} setStart={setStart} text={buttonText} />
         </div>
       </div>
     </div>

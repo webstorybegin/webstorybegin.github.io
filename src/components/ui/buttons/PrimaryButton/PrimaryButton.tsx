@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from "react";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -19,21 +19,21 @@ const useStyles = makeStyles((theme) => ({
       background: "#E87928",
     },
     "@media (max-width: 375px)": {
-      width: '100%',
+      width: "100%",
     },
   },
 }));
 
 interface IPrimaryButton {
-  readonly text: string,
-  readonly start?: boolean,
-  readonly setStart: (start: boolean) => void
+  readonly text: string;
+  readonly start?: boolean;
+  readonly setStart: (start: boolean) => void;
 }
 
-export const PrimaryButton: FC<IPrimaryButton> = ({ 
-  text, 
-  start, 
-  setStart 
+export const PrimaryButton: FC<IPrimaryButton> = ({
+  text,
+  start,
+  setStart,
 }) => {
   const classes = useStyles();
 
@@ -43,10 +43,7 @@ export const PrimaryButton: FC<IPrimaryButton> = ({
 
   return (
     <>
-      <button 
-        className={classes.root}
-        onClick={restart} 
-      >
+      <button className={classes.root} onClick={restart}>
         {text}
       </button>
     </>

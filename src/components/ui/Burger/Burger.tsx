@@ -1,6 +1,5 @@
-import { FC } from 'react';
+import { FC } from "react";
 import { makeStyles } from "@material-ui/styles";
-import cn from "classnames";
 
 const useStyles = makeStyles({
   root: {
@@ -26,13 +25,15 @@ const useStyles = makeStyles({
       width: "100%",
       height: "2px",
       background: "#000",
-      
     },
     "&:before": {
       top: 9,
     },
     "&:after": {
       bottom: 0,
+    },
+    active: {
+      border: "1px solid red",
     },
     "@media (max-width: 950px)": {
       display: "block",
@@ -41,18 +42,15 @@ const useStyles = makeStyles({
 });
 
 interface IBurger {
-  readonly burgerMenu: boolean,
-  readonly setBurgerMenu: (setBurgerMenu: boolean) => void
+  readonly burgerMenu: boolean;
+  readonly setBurgerMenu: (setBurgerMenu: boolean) => void;
 }
 
 export const Burger: FC<IBurger> = ({ burgerMenu, setBurgerMenu }) => {
   const classes = useStyles();
 
   return (
-    <div
-      className={classes.root}
-      onClick={() => setBurgerMenu(!burgerMenu)}
-    >
+    <div className={classes.root} onClick={() => setBurgerMenu(!burgerMenu)}>
       <span />
     </div>
   );
