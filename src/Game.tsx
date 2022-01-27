@@ -4,6 +4,7 @@ import { StartPage } from 'components/StartPage/StartPage';
 import { makeStyles } from '@material-ui/styles';
 import { Quiz } from 'components/Quiz/Quiz';
 
+
 const useStyles = makeStyles({
   root: {
     height: '100vh',

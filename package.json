@@ -17,7 +17,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .ts,.tsx src --fix --color",
-    "lint:fix": "eslint ./src --fix --color"
+    "lint:fix": "eslint ./src --fix --color",
+    "format": "prettier --write",
+    "precommit": "lint-staged"
   },
   "prettier": {
     "singleQuote": true,
@@ -66,14 +68,8 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "src/**/*.tsx": [
-        "formatter --write",
-        "git add"
-      ]
-    },
-    "*.tsx": [
-      "npm run lint:fix",
+    "src/**/*.tsx": [
+      "prettier --single-quote --use-tabs --trailing-comma es5 --write",
       "git add"
     ],
     "ignore": [
