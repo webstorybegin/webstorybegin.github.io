@@ -13,7 +13,8 @@ const useStyles = makeStyles({
 		alignItems: 'center',
 		backgroundImage: '-webkit-linear-gradient(-61deg, #ffffff 50%, #FFF3EB 50%)',
 		fontFamily: 'Inter',
-	},
+    
+  },
 });
 
 const Game = () => {

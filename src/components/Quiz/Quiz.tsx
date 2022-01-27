@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 		padding: '130px 140px 122px 80px',
 		'@media (max-width: 950px)': {
 			width: '100%',
-			padding: '60px 20px 20px 20px',
+			padding: '60px 30px 30px 20px',
 		},
 	},
 	winning: {

@@ -29,7 +29,7 @@ interface ITimer {
 }
 
 export const Timer: FC<ITimer> = ({ setStop, questionNumber }) => {
-  const [time, setTime] = useState(600);
+  const [time, setTime] = useState(30);
 
   useEffect(() => {
     if (time === 0) return setStop(true);
@@ -40,7 +40,7 @@ export const Timer: FC<ITimer> = ({ setStop, questionNumber }) => {
   }, [setStop, time]);
 
   useEffect(() => {
-    setTime(600);
+    setTime(30);
   }, [questionNumber]);
 
   const classes = useStyles();
