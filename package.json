@@ -49,7 +49,10 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "linters": {
+      "src/**/*.js": ["formatter --write", "git add"]
+    },
+    "*.tsx": [
       "npm run lint:fix",
       "git add"
     ],
