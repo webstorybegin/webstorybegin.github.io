@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .ts,.tsx src --fix --color"
+    "lint": "eslint --ext .ts,.tsx src --fix --color",
+    "lint:fix": "eslint ./src --fix --color"
   },
   "prettier": {
     "singleQuote": true,
@@ -66,7 +67,7 @@
   },
   "lint-staged": {
     "linters": {
-      "src/**/*.js": [
+      "src/**/*.tsx": [
         "formatter --write",
         "git add"
       ]
