@@ -15,21 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint --ext .ts,.tsx src --fix --color",
-    "lint:fix": "eslint ./src --fix --color",
-    "format": "prettier --write",
-    "precommit": "lint-staged"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "printWidth": 100
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
@@ -45,37 +31,10 @@
   },
   "devDependencies": {
     "@material-ui/core": "^4.12.3",
+    "@material-ui/styles": "^4.11.4",
     "@types/react": "^17.0.38",
-    "@typescript-eslint/eslint-plugin": "^5.10.1",
-    "@typescript-eslint/parser": "^5.10.1",
     "classnames": "^2.3.1",
-    "eslint": "^8.7.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.2",
-    "prettier": "^2.5.1",
-    "sass": "^1.49.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.tsx": [
-      "prettier --single-quote --use-tabs --trailing-comma es5 --write",
-      "git add"
-    ],
-    "ignore": [
-      "node_modules",
-      "dist",
-      "package-lock.json"
-    ]
+    "sass": "^1.49.0",
+    "typescript": "^4.5.5"
   }
 }
