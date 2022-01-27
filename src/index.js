@@ -7,6 +7,7 @@ import './style/_global.scss'
 ReactDOM.render(
   <React.StrictMode>
     <Game />
+    <Hello />
   </React.StrictMode>,
   document.getElementById('root')
 );
