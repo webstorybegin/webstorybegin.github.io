@@ -98,8 +98,6 @@ export const Quiz: FC<IQuiz> = ({ start, setStart }) => {
 	const [stop, setStop] = useState(false);
 	const [burgerMenu, setBurgerMenu] = useState(false);
 
-  console.log('burger', burgerMenu)
-
 	const { questions } = data;
 	const { question, money } = questions;
 
