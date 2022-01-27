@@ -1,6 +1,9 @@
 import { FC, useState, useEffect } from "react";
-import { makeStyles } from "@material-ui/styles";
+import useSound from 'use-sound';
 
+import correct from 'assets/sounds/correct.mp3'
+import wrong  from 'assets/sounds/wrong.mp3'
+import { makeStyles } from "@material-ui/styles";
 import cn from "classnames";
 
 const useStyles = makeStyles({
@@ -124,6 +127,8 @@ export const Choice: FC<IChoice> = ({
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectAnswer, setSelectAnswer] = useState(null);
   const [className, setClassName] = useState("answer");
+  const [correctAnswer] = useSound(correct);
+  const [wrongAnswer] = useSound(wrong);
 
   useEffect(() => {
     setCurrentQuestion(question[questionNumber - 1]);
@@ -142,9 +147,11 @@ export const Choice: FC<IChoice> = ({
     );
     delay(4000, () => {
       if (item.correct) {
+        correctAnswer()
         setQuestionNumber((next) => next + 1);
         setSelectAnswer(null);
       } else {
+        wrongAnswer()
         setStop(true);
       }
     });

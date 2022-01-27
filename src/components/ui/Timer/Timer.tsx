@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { useState, useEffect } from "react";
+import useSound from "use-sound";
 
+import wrong from 'assets/sounds/wrong.mp3'
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
@@ -30,9 +32,13 @@ interface ITimer {
 
 export const Timer: FC<ITimer> = ({ setStop, questionNumber }) => {
   const [time, setTime] = useState(30);
+  const [wrongAnswer] = useSound(wrong);
 
   useEffect(() => {
-    if (time === 0) return setStop(true);
+    if (time === 0) {
+      wrongAnswer();
+      setStop(true);
+    };
     const interval = setInterval(() => {
       setTime((prev) => prev - 1);
     }, 1000);

@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { StartPage } from 'components/StartPage/StartPage';
+import useSound from 'use-sound';
 
+import play from 'assets/sounds/play.mp3'
 import { makeStyles } from '@material-ui/styles';
 import { Quiz } from 'components/Quiz/Quiz';
 
@@ -19,6 +21,11 @@ const useStyles = makeStyles({
 
 const Game = () => {
 	const [start, setStart] = useState(false);
+  const [playGame] = useSound(play)
+
+  useEffect(() => {
+    start && playGame()
+  }, [start])
 
 	const classes = useStyles();
 

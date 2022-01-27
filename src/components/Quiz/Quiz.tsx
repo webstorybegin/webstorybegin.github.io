@@ -8,7 +8,6 @@ import { Burger } from 'components/ui/Burger/Burger';
 import { data } from 'assets/data/data';
 
 import { makeStyles } from '@material-ui/styles';
-
 import cn from 'classnames'
 
 const useStyles = makeStyles({
