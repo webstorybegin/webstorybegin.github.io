@@ -1,8 +1,10 @@
 import { FC } from "react";
+
 import { makeStyles } from "@material-ui/styles";
+import cn from 'classnames';
 
 const useStyles = makeStyles({
-  root: {
+  burger: {
     position: "absolute",
     display: "none",
     marginLeft: 20,
@@ -17,7 +19,7 @@ const useStyles = makeStyles({
       width: "100%",
       height: 2,
       background: "#000",
-      transition: ".5s linear 0s",
+      transition: ".2s linear 0s",
     },
     "&:before, &:after": {
       position: "absolute",
@@ -25,6 +27,8 @@ const useStyles = makeStyles({
       width: "100%",
       height: "2px",
       background: "#000",
+      transformOrigin: 'center',
+      transition: ".2s linear 0s",
     },
     "&:before": {
       top: 9,
@@ -32,12 +36,21 @@ const useStyles = makeStyles({
     "&:after": {
       bottom: 0,
     },
-    active: {
-      border: "1px solid red",
-    },
     "@media (max-width: 950px)": {
       display: "block",
     },
+  },
+  active: {
+    right: 28,
+    "& span": {
+      transform: 'rotate(-400deg) translateY(11.5px)',
+    },
+    "&:before": {
+      opacity: 0,
+    },
+    "&:after": {
+      transform: 'rotate(400deg) translateY(-12.5px)',
+    }
   },
 });
 
@@ -50,7 +63,9 @@ export const Burger: FC<IBurger> = ({ burgerMenu, setBurgerMenu }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} onClick={() => setBurgerMenu(!burgerMenu)}>
+    <div className={
+      burgerMenu ? cn(classes.burger, classes.active) : classes.burger
+    } onClick={() => setBurgerMenu(!burgerMenu)}>
       <span />
     </div>
   );
