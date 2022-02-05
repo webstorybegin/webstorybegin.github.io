@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.fa750c81.css",
-    "main.js": "/static/js/main.c8cd9adb.js",
+    "main.js": "/static/js/main.5a724ccf.js",
     "static/js/845.510731d4.chunk.js": "/static/js/845.510731d4.chunk.js",
     "static/media/play.mp3": "/static/media/play.8e5f6d1d81d4e1414b95.mp3",
+    "static/media/read.png": "/static/media/read.5384ea092685c5e8adaa.png",
     "static/media/correct.mp3": "/static/media/correct.160572d72c858155072e.mp3",
     "static/media/wrong.mp3": "/static/media/wrong.e946821894ae9b0a0d6f.mp3",
     "static/media/discover.png": "/static/media/discover.14e3fa628437e9969aa5.png",
-    "static/media/read.png": "/static/media/read.3562851e991f3c8eb57b.png",
-    "static/media/listen.png": "/static/media/listen.e3cdb44c1b3f5f82a6ee.png",
+    "static/media/listen.png": "/static/media/listen.32f8222465abfde43af2.png",
     "static/media/like.png": "/static/media/like.16ab9d4794de3066e9df.png",
     "static/media/expect.png": "/static/media/expect.4984c08a0e5faf1002a7.png",
     "static/media/vivaldi.png": "/static/media/vivaldi.b989c6266c64872f9e8a.png",
     "index.html": "/index.html",
     "main.fa750c81.css.map": "/static/css/main.fa750c81.css.map",
-    "main.c8cd9adb.js.map": "/static/js/main.c8cd9adb.js.map",
+    "main.5a724ccf.js.map": "/static/js/main.5a724ccf.js.map",
     "845.510731d4.chunk.js.map": "/static/js/845.510731d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa750c81.css",
-    "static/js/main.c8cd9adb.js"
+    "static/js/main.5a724ccf.js"
   ]
 }
