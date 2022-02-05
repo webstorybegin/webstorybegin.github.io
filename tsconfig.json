@@ -2,14 +2,9 @@
   "compilerOptions": {
     "baseUrl": "src",
     "jsx": "react-jsx",
-    "target": "es5",
+    "target": "es5"
   },
-  "include": [
-    "src/*",
-    "types/*"
-  ],
-  "typeRoots": [
-    "node_modules/@types",
-    "*"
-  ] 
+  "exclude": ["node_modules", "build"],
+  "include": ["src/**/*", "types/*"],
+  "typeRoots": ["node_modules/@types", "*"]
 }

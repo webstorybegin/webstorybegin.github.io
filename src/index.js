@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Game from './Game';
+import React from "react";
+import ReactDOM from "react-dom";
+import Projects from "./Projects";
 
-import './style/_global.scss'
+import "./style/_global.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Game />
+    <Projects />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
