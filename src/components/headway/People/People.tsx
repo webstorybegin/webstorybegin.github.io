@@ -52,8 +52,7 @@ const useStyles = makeStyles({
     background: "#fff",
     borderRadius: 12,
     padding: 12,
-    marginRight: 12,
-    marginBottom: 16,
+    margin: "0px 16px 16px 0px",
     "& p": {
       marginBottom: 12,
       lineHeight: "146%",
@@ -90,16 +89,16 @@ const useStyles = makeStyles({
   },
   containerEvaluation: {
     display: "flex",
-    flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
+    "@media (max-width: 390px)": {
+      display: "block",
+    },
   },
   evaluation: {
     padding: "20px 30px",
-    textAlign: "left",
     background: "#fff",
-    marginRight: 12,
-    marginBottom: 12,
+    marginRight: 16,
     border: "1px solid rgba(0, 0, 0, 0.1)",
     borderRadius: 12,
     "&:first-child": {
@@ -107,7 +106,9 @@ const useStyles = makeStyles({
     },
     "&:last-child": {
       color: "#00BB77",
-      marginRight: 0,
+      "@media (max-width: 700px)": {
+        marginRight: 0,
+      },
     },
     "& span": {
       fontSize: 28,
@@ -118,6 +119,11 @@ const useStyles = makeStyles({
       opacity: 0.4,
       color: "#000",
       fontSize: 14,
+    },
+    "@media (max-width: 390px)": {
+      marginRight: 0,
+      marginBottom: 16,
+      padding: "15px 0px",
     },
   },
   rating: {
