@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fa750c81.css",
-    "main.js": "/static/js/main.54348b53.js",
+    "main.js": "/static/js/main.dc7e405a.js",
     "static/js/845.510731d4.chunk.js": "/static/js/845.510731d4.chunk.js",
     "static/media/discover.png": "/static/media/discover.33652304aae4c0dd4e75.png",
     "static/media/play.mp3": "/static/media/play.8e5f6d1d81d4e1414b95.mp3",
@@ -9,16 +9,28 @@
     "static/media/correct.mp3": "/static/media/correct.160572d72c858155072e.mp3",
     "static/media/wrong.mp3": "/static/media/wrong.e946821894ae9b0a0d6f.mp3",
     "static/media/listen.png": "/static/media/listen.32f8222465abfde43af2.png",
+    "static/media/vivaldi.png": "/static/media/vivaldi.13f2d5d0ca70acf6d692.png",
+    "static/media/expect.png": "/static/media/expect.b6c0e73fbfcc83b01adb.png",
+    "static/media/creative.png": "/static/media/creative.1ed28558f73202d6e22a.png",
+    "static/media/sweat.png": "/static/media/sweat.d00a2962a9aa68d763c7.png",
+    "static/media/vibes.png": "/static/media/vibes.e28ffbdd3db5dc11955a.png",
+    "static/media/wood.png": "/static/media/wood.e6de054acad76f971341.png",
+    "static/media/given.png": "/static/media/given.b5c6e62c864c699b8f60.png",
+    "static/media/bears.png": "/static/media/bears.76a596b218201074527d.png",
     "static/media/like.png": "/static/media/like.16ab9d4794de3066e9df.png",
-    "static/media/expect.png": "/static/media/expect.4984c08a0e5faf1002a7.png",
-    "static/media/vivaldi.png": "/static/media/vivaldi.b989c6266c64872f9e8a.png",
+    "static/media/work.png": "/static/media/work.7eefd2e91c995395a889.png",
+    "static/media/bawse.png": "/static/media/bawse.39fa5a1dcc3b86de1693.png",
+    "static/media/people.png": "/static/media/people.fef969be545cca8a64cf.png",
+    "static/media/days.png": "/static/media/days.c9f8c2c265957bf832cf.png",
+    "static/media/bed.png": "/static/media/bed.bad18b405b7caab0c672.png",
+    "static/media/about.png": "/static/media/about.08c1e8703bb25ec6afed.png",
     "index.html": "/index.html",
     "main.fa750c81.css.map": "/static/css/main.fa750c81.css.map",
-    "main.54348b53.js.map": "/static/js/main.54348b53.js.map",
+    "main.dc7e405a.js.map": "/static/js/main.dc7e405a.js.map",
     "845.510731d4.chunk.js.map": "/static/js/845.510731d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa750c81.css",
-    "static/js/main.54348b53.js"
+    "static/js/main.dc7e405a.js"
   ]
 }
