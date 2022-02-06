@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   summary: {
-    padding: "8px 0",
+    padding: "4px 0",
     textAlign: "center",
   },
   container: {
@@ -14,18 +14,19 @@ const useStyles = makeStyles({
     borderRadius: 12,
     "& h1": {
       fontWeight: 700,
-      lineHeight: 1.2,
+      lineHeight: "130%",
       fontSize: 40,
       margin: "0 auto 10px",
     },
     "& h2": {
       margin: "0 auto 30px",
       fontSize: 20,
-      lineHeight: 1.2,
+      lineHeight: "150%",
     },
     "& h3": {
       fontSize: 16,
       marginBottom: 5,
+      lineHeight: "150%",
     },
     "& h4": {
       display: "inline-block",
@@ -52,6 +53,7 @@ const useStyles = makeStyles({
     "& p": {
       color: "rgba(0, 0, 0, 0.4)",
       fontSize: 16,
+      lineHeight: "150%",
     },
     "& img": {
       marginBottom: 15,

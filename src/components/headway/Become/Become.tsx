@@ -2,13 +2,11 @@ import { useEffect, useRef } from "react";
 import { data } from "assets/data/data";
 
 import lottie from "lottie-web";
-import { PrimaryButton } from "components/headway/ui";
-
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
   become: {
-    padding: "8px 0px",
+    padding: "4px 0px",
     textAlign: "center",
     justifyContent: "center",
   },
@@ -27,7 +25,10 @@ const useStyles = makeStyles({
     },
     "& img": {
       marginTop: 15,
+      marginBottom: -13,
       maxWidth: "100%",
+      width: 327,
+      height: 315,
     },
     "@media (max-width: 710px)": {
       "& h1": {
@@ -81,9 +82,7 @@ export const Become = () => {
         <h2>{subTitle}</h2>
         <div className={classes.timeLine} ref={container} />
         <img src={src} alt={alt} />
-        <div className={classes.button}>
-          <PrimaryButton />
-        </div>
+        <div className={classes.button}></div>
       </div>
     </div>
   );

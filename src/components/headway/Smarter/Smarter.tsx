@@ -6,7 +6,7 @@ const lightning = require("assets/images/lightning.png");
 
 const useStyles = makeStyles({
   smarter: {
-    padding: "8px 0px",
+    padding: "4px 0px",
     textAlign: "center",
   },
   container: {
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     "& h1": {
       fontWeight: 700,
       fontSize: 40,
-      lineHeight: 1.2,
+      lineHeight: "130%",
       margin: "0 auto 25px",
     },
     "& h2": {
@@ -31,6 +31,7 @@ const useStyles = makeStyles({
     },
     "& p": {
       fontSize: 16,
+      lineHeight: "150%",
     },
     "@media (max-width: 710px)": {
       "& h1": {
@@ -44,79 +45,122 @@ const useStyles = makeStyles({
   images: {
     marginBottom: 10,
     "& img": {
+      "&:nth-child(1)": {
+        width: 123,
+        height: 123,
+      },
       "&:nth-child(2)": {
-        margin: "-15px 0px 0px -30px",
+        margin: "-5px 0px 0px -15px",
+        width: 104,
+        height: 65,
       },
       "&:nth-child(3)": {
-        margin: "52px 0px 0px -110px",
+        margin: "45px 0px 0px -110px",
+        width: 96,
+        height: 96,
       },
     },
   },
   fields: {
     margin: "45px auto 35px",
+    display: "flex",
+    justifyContent: "center",
     position: "relative",
-    width: 263,
-    height: 98,
-    border: "1px solid rgba(0, 102, 255, 0.2)",
-    borderRadius: 8,
-    background: "#fff",
-    "&:before, &:after": {
+    height: 100,
+    "& div": {
       position: "absolute",
-      content: '""',
       border: "1px solid rgba(0, 102, 255, 0.2)",
       borderRadius: 8,
       background: "#fff",
-      left: "50%",
-      transform: "translateX(-50%)",
-    },
-    "&:before": {
-      width: 225,
-      height: 28,
-      top: -12,
-      zIndex: 2,
-    },
-    "&:after": {
-      width: 188,
-      height: 28,
-      top: -22,
-      zIndex: 1,
+      "&:nth-child(1)": {
+        position: "relative",
+        padding: "24px 31px 24px 50px",
+        width: 263,
+        zIndex: 3,
+        "& span": {
+          position: "absolute",
+          animation: "$lineCenter 2s infinite 0s",
+          marginTop: 18,
+          left: 50,
+          display: "block",
+          background: "rgba(0, 102, 255, 0.2)",
+          borderRadius: 4,
+          width: 188,
+          height: 10,
+          "&:before, &:after": {
+            position: "absolute",
+            content: '""',
+            left: 0,
+            background: "rgba(0, 102, 255, 0.2)",
+            borderRadius: 4,
+            height: 10,
+          },
+          "&:before": {
+            animation: "$lineBottom 2s infinite .3s",
+            width: 172,
+            top: 20,
+          },
+          "&:after": {
+            animation: "$lineTop 2s infinite .6s",
+            width: 142,
+            bottom: 20,
+          },
+        },
+        "&:before": {
+          position: "absolute",
+          content: '""',
+          backgroundImage: `url(${lightning})`,
+          left: 20,
+          top: 23,
+          width: 16,
+          height: 24,
+        },
+      },
+      "&:nth-child(2)": {
+        width: 225,
+        height: 28,
+        top: -14,
+        zIndex: 2,
+      },
+      "&:nth-child(3)": {
+        width: 188,
+        height: 36,
+        top: -26,
+        zIndex: 1,
+      },
     },
   },
-  lines: {
-    position: "relative",
-    padding: "24px 36px 24px 55px",
-    "&:before": {
-      position: "absolute",
-      content: '""',
-      backgroundImage: `url(${lightning})`,
-      left: 25,
-      top: 30,
-      width: 16,
-      height: 24,
-    },
-    "& span": {
-      marginTop: 25,
-      display: "block",
-      background: "rgba(0, 102, 255, 0.2)",
-      borderRadius: 4,
+  "@keyframes lineCenter": {
+    "25%": {
       width: 188,
-      height: 10,
-      "&:before, &:after": {
-        position: "absolute",
-        content: '""',
-        left: 55,
-        background: "rgba(0, 102, 255, 0.2)",
-        borderRadius: 4,
-        height: 10,
-      },
-      "&:before": {
-        width: 172,
-        top: 30,
-      },
-      "&:after": {
-        width: 142,
-        bottom: 5,
-      },
+    },
+    "50%": {
+      width: 205,
+    },
+    "100%": {
+      width: 188,
+    },
+  },
+  "@keyframes lineBottom": {
+    "25%": {
+      width: 172,
+    },
+    "50%": {
+      width: 190,
+    },
+    "100%": {
+      width: 172,
+    },
+  },
+  "@keyframes lineTop": {
+    "25%": {
+      width: 142,
+    },
+    "50%": {
+      width: 175,
+    },
+    "100%": {
+      width: 142,
     },
   },
   build: {
@@ -144,10 +188,14 @@ const useStyles = makeStyles({
   image: {
     "& img": {
       "&:nth-child(1)": {
-        margin: "-75px -150px 0px -30px",
+        margin: "-75px -130px 0px -30px",
+        width: 87,
+        height: 87,
       },
       "&:nth-child(2)": {
-        margin: "-48px -30px 0px 0px",
+        margin: "-48px -20px 0px 0px",
+        width: 65,
+        height: 65,
       },
     },
     "& ul": {
@@ -158,7 +206,6 @@ const useStyles = makeStyles({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        cursor: "pointer",
         color: "#00BB77",
         fontSize: 10,
         width: 26,
@@ -172,7 +219,7 @@ const useStyles = makeStyles({
           background: "#00BB77",
           color: "#fff",
         },
-        "&:hover": {
+        "&:nth-child(4)": {
           "&:before": {
             position: "absolute",
             content: '""',
@@ -211,9 +258,11 @@ export const Smarter = () => {
         <h2>{text[0].title}</h2>
         <p>{text[0].subTitle}</p>
         <div className={classes.fields}>
-          <div className={classes.lines}>
+          <div>
             <span />
           </div>
+          <div />
+          <div />
         </div>
         <h2>{text[1].title}</h2>
         <p>{text[0].subTitle}</p>

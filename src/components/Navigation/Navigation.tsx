@@ -29,7 +29,7 @@ export const Navigation = () => {
       </NavLink>
       /
       <NavLink exact to="/headway" activeStyle={{ color: "#FF8B37" }}>
-        Headway
+        Landing
       </NavLink>
     </div>
   );

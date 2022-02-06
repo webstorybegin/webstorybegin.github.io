@@ -13,6 +13,7 @@ import {
   People,
   Footer,
 } from "components/headway";
+import { PrimaryButton } from "components/headway/ui";
 
 import useSound from "use-sound";
 import play from "assets/sounds/play.mp3";
@@ -32,13 +33,13 @@ const useStyles = makeStyles({
     overflowX: "hidden",
   },
   headway: {
-    height: "100vh",
+    position: "relative",
     width: "100%",
     display: "flex",
     flexDirection: "column",
     fontFamily: "Inter",
     background: "#FFF8F4",
-    overflowX: "hidden",
+
   },
   container: {
     width: "100%",
@@ -85,6 +86,7 @@ const Projects = () => {
               <People />
             </div>
             <Footer />
+            <PrimaryButton />
           </div>
         </Route>
       </Switch>

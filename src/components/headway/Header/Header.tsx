@@ -9,6 +9,12 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
   },
+  logo: {
+    "& img": {
+      width: 132,
+      height: 24,
+    },
+  },
   buttonsWrapper: {
     marginLeft: "auto",
     display: "flex",
@@ -34,9 +40,11 @@ export const Header = () => {
 
   return (
     <div className={classes.header}>
-      <a href="*" target="_blank">
-        <img src={logo.src} alt={logo.alt} />
-      </a>
+      <div className={classes.logo}>
+        <a href="*" target="_blank">
+          <img src={logo.src} alt={logo.alt} />
+        </a>
+      </div>
       <div className={classes.buttonsWrapper}>
         {buttons &&
           buttons.map((item) => (

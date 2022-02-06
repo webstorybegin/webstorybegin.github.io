@@ -514,7 +514,7 @@ export const data = {
     title: "Determine your goal and go ahead!",
     subTitle:
       "Learn something new every day from Self-Growth, Happiness, Money, Health, and many other categories. Benefit from unlimited access to world best thoughts.",
-    catigories: [
+      categories: [
       {
         id: 1,
         text: "All categories",
@@ -559,6 +559,7 @@ export const data = {
         id: 8,
         text: "Productivity",
         src: require("assets/images/productivity.png"),
+        alt: "productivity",
       },
       {
         id: 9,
@@ -584,81 +585,97 @@ export const data = {
         id: 1,
         src: require("assets/images/bawse.png"),
         alt: "bawse",
+        category: 'Self-Growth',
       },
       {
         id: 2,
         src: require("assets/images/given.png"),
         alt: "given",
+        category: 'Happiness'
       },
       {
         id: 3,
         src: require("assets/images/about.png"),
         alt: "love",
+        category: 'Love & Sex'
       },
       {
         id: 4,
         src: require("assets/images/creative.png"),
         alt: "creative",
+        category: 'Health'
       },
       {
         id: 5,
         src: require("assets/images/man.png"),
         alt: "man",
+        category: 'Money & Investment'
       },
       {
         id: 6,
         src: require("assets/images/given.png"),
         alt: "given",
+        category: 'Happiness'
       },
       {
         id: 7,
         src: require("assets/images/bed.png"),
         alt: "bed",
+        category: 'Negotiation'
       },
       {
         id: 8,
         src: require("assets/images/vibes.png"),
         alt: "vibes",
+        category: 'Health'
       },
       {
         id: 9,
         src: require("assets/images/sweat.png"),
         alt: "sweat",
+        category: 'Productivity'
       },
       {
         id: 10,
         src: require("assets/images/bears.png"),
         alt: "bears",
+        category: 'Spirituality'
       },
       {
         id: 11,
         src: require("assets/images/wood.png"),
         alt: "wood",
+        category: 'Sports & Fitness'
       },
       {
         id: 12,
         src: require("assets/images/vivaldi.png"),
         alt: "vivaldi",
+        category: 'Money & Investment'
       },
       {
         id: 13,
         src: require("assets/images/people.png"),
         alt: "people",
+        category: 'Spirituality'
       },
       {
         id: 14,
         src: require("assets/images/days.png"),
         alt: "days",
+        category: 'Business & Career'
       },
       {
         id: 15,
         src: require("assets/images/work.png"),
         alt: "work",
+        category: 'Self-Growth',
       },
       {
         id: 16,
         src: require("assets/images/expect.png"),
         alt: "expect",
+        category: 'Business & Career'
       },
     ],
   },
@@ -726,14 +743,14 @@ export const data = {
         id: 1,
         number: 4.7,
         text: "50K ratings",
-        src: require("assets/images/logo1.png"),
+        src: require("assets/images/app-store.png"),
         alt: "logo",
       },
       {
         id: 2,
         number: 4.2,
         text: "31K ratings",
-        src: require("assets/images/logo2.png"),
+        src: require("assets/images/play-market.png"),
         alt: "logo",
       },
     ],

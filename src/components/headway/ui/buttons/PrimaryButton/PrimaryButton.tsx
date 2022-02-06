@@ -4,6 +4,10 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   button: {
+    position: "fixed",
+    bottom: 13,
+    left: "50%",
+    transform: "translateX(-50%)",
     width: 336,
     padding: "20px 0",
     background: "#0066FF",
@@ -13,6 +17,7 @@ const useStyles = makeStyles({
     fontWeight: 600,
     borderRadius: 8,
     transition: ".1s linear 0s",
+    zIndex: 100,
     "&:hover": {
       background: "#327ef0",
     },
@@ -20,7 +25,7 @@ const useStyles = makeStyles({
       background: "#154ea3",
     },
     "@media (max-width: 375px)": {
-      width: "100%",
+      width: "80%",
     },
   },
 });

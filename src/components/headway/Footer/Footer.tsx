@@ -4,12 +4,20 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles({
   footer: {
     textAlign: "center",
+    marginBottom: 100,
+  },
+  logo: {
+    "& img": {
+      width: 132,
+      height: 24,
+    },
   },
   container: {
     margin: "0 auto",
     background: "#fff",
     padding: 12,
     border: "1px solid rgba(0, 0, 0, 0.1)",
+    borderRadius: 12,
     "& h1": {
       margin: "0 auto 10px",
       fontSize: 27,
@@ -59,16 +67,18 @@ export const Footer = () => {
   return (
     <div className={classes.footer}>
       <div className={classes.container}>
-        <a href="*" target="_blank">
-          <img src={logo.src} alt={logo.alt} />
-        </a>
+        <div className={classes.logo}>
+          <a href="*" target="_blank">
+            <img src={logo.src} alt={logo.alt} />
+          </a>
+        </div>
         <h1>{title}</h1>
         <p>{subTitle}</p>
         <div className={classes.icons}>
           {social &&
             social.map((item) => (
-              <a href={item.link} target="_blank">
-                <img key={item.id} src={item.src} alt={item.alt} />
+              <a key={item.id} href={item.link} target="_blank">
+                <img src={item.src} alt={item.alt} />
               </a>
             ))}
         </div>

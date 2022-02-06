@@ -7,7 +7,7 @@ const instagram = require("assets/images/instagram.png");
 
 const useStyles = makeStyles({
   people: {
-    padding: "8px 0",
+    padding: "4px 0px 8px 0px",
     textAlign: "center",
   },
   container: {
@@ -17,14 +17,14 @@ const useStyles = makeStyles({
     borderRadius: 12,
     "& h1": {
       fontWeight: 700,
-      lineHeight: 1.2,
+      lineHeight: "130%",
       fontSize: 40,
       margin: "0 auto 10px",
     },
     "& h2": {
       margin: "0 auto 30px",
       fontSize: 20,
-      lineHeight: 1.2,
+      lineHeight: "150%",
     },
     "& a": {
       color: "#0066FF",
@@ -54,9 +54,15 @@ const useStyles = makeStyles({
     padding: 12,
     marginRight: 12,
     marginBottom: 16,
-    lineHeight: "146%",
     "& p": {
       marginBottom: 12,
+      lineHeight: "146%",
+    },
+    "@media (max-width: 700px)": {
+      marginRight: 0,
+    },
+    "@media (max-width: 388px)": {
+      marginRight: 0,
     },
   },
   social: {
@@ -89,8 +95,7 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   evaluation: {
-    minWidth: 200,
-    padding: "37px 0px",
+    padding: "20px 30px",
     textAlign: "left",
     background: "#fff",
     marginRight: 12,
@@ -102,6 +107,7 @@ const useStyles = makeStyles({
     },
     "&:last-child": {
       color: "#00BB77",
+      marginRight: 0,
     },
     "& span": {
       fontSize: 28,
@@ -109,19 +115,27 @@ const useStyles = makeStyles({
     },
     "& p": {
       textAlign: "center",
-
       opacity: 0.4,
       color: "#000",
       fontSize: 14,
     },
   },
   rating: {
-    marginLeft: "50%",
-    transform: "translateX(-50%)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    "& img": {
+      width: 32,
+      height: 32,
+    },
   },
   ratingStars: {
-    marginLeft: "47%",
-    transform: "translateX(-47%)",
+    display: "flex",
+    flexDirection: "column",
+    "& span": {
+      padding: 0,
+      margin: 0,
+    },
   },
 });
 
@@ -137,10 +151,7 @@ export const People = () => {
         <h1>{title}</h1>
         <h2>
           {subTitle}
-          <a href="*" target="_blank">
-            {" "}
-            {link}
-          </a>
+          <a> {link}</a>
         </h2>
         <div className={classes.containerReview}>
           {review &&
