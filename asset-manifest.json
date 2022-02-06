@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fa750c81.css",
-    "main.js": "/static/js/main.75d41aa7.js",
+    "main.js": "/static/js/main.92bffa83.js",
     "static/js/845.510731d4.chunk.js": "/static/js/845.510731d4.chunk.js",
     "static/media/discover.png": "/static/media/discover.33652304aae4c0dd4e75.png",
     "static/media/play.mp3": "/static/media/play.8e5f6d1d81d4e1414b95.mp3",
@@ -19,18 +19,21 @@
     "static/media/bears.png": "/static/media/bears.76a596b218201074527d.png",
     "static/media/like.png": "/static/media/like.16ab9d4794de3066e9df.png",
     "static/media/work.png": "/static/media/work.7eefd2e91c995395a889.png",
+    "static/media/newYork.png": "/static/media/newYork.0a12059bad9835baac94.png",
     "static/media/bawse.png": "/static/media/bawse.39fa5a1dcc3b86de1693.png",
     "static/media/people.png": "/static/media/people.fef969be545cca8a64cf.png",
     "static/media/days.png": "/static/media/days.c9f8c2c265957bf832cf.png",
     "static/media/bed.png": "/static/media/bed.bad18b405b7caab0c672.png",
     "static/media/about.png": "/static/media/about.08c1e8703bb25ec6afed.png",
+    "static/media/harvard.png": "/static/media/harvard.9058c568f356abe35a4d.png",
+    "static/media/amazon.png": "/static/media/amazon.1abb0234151b1ce27cdb.png",
     "index.html": "/index.html",
     "main.fa750c81.css.map": "/static/css/main.fa750c81.css.map",
-    "main.75d41aa7.js.map": "/static/js/main.75d41aa7.js.map",
+    "main.92bffa83.js.map": "/static/js/main.92bffa83.js.map",
     "845.510731d4.chunk.js.map": "/static/js/845.510731d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa750c81.css",
-    "static/js/main.75d41aa7.js"
+    "static/js/main.92bffa83.js"
   ]
 }
