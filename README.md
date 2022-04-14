@@ -53,5 +53,3 @@ You can adapt layout for desktop as you see fit.
 - A layout that will be nondescript to expand and maintain.
 - Architectural organization of the code.
 - Absence of layout shifts and blips.
-
-Translated with www.DeepL.com/Translator (free version)
