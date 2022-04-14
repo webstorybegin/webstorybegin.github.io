@@ -5,9 +5,6 @@
   4. npm start
 
 
-
-**What needed to be done:**
-
 **1.**
 The basic function of the game "Who Wants to Be a Millionaire" is to be implemented: 
 
