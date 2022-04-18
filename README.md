@@ -11,7 +11,7 @@ The basic function of the game "Who Wants to Be a Millionaire" is to be implemen
 - The grader answers one of the 12 questions by line.
 - Each question has 4 variants of answers and only one correct answer.
 - If the answer is correct, the grader proceeds to the next question. If the answer is wrong, the player goes to the final screen.
-- The final screen must show the final result of the game. Design for layout [available] (https://www.figma.com/file/tIZEZn2HTAeSDQRzoOzvXE/Front-end-test%2C-Headway). The layout must be adaptive.
+- The final screen must show the final result of the game. Design for layout [available] (https://www.figma.com/file/tIZEZn2HTAeSDQRzoOzvXE/Front-end-test%2C-Headway).  The layout must be adaptive.
 
 ### Technical requirements:
 
