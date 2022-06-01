@@ -19,6 +19,7 @@ import useSound from "use-sound";
 import play from "assets/sounds/play.mp3";
 
 import { makeStyles } from "@material-ui/styles";
+import { CurrencyHeader } from "components/currencyCalculator";
 
 const useStyles = makeStyles({
   millionaire: {
@@ -88,6 +89,9 @@ const Projects = () => {
             <Footer />
             <PrimaryButton />
           </div>
+        </Route>
+        <Route exact path="/calculator">
+            <CurrencyHeader />
         </Route>
       </Switch>
     </Router>
