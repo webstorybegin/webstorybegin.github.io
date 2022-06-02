@@ -13,13 +13,13 @@ import {
   People,
   Footer,
 } from "components/headway";
+import { CurrencyCalculator } from "components/currencyCalculator";
 import { PrimaryButton } from "components/headway/ui";
 
 import useSound from "use-sound";
 import play from "assets/sounds/play.mp3";
 
 import { makeStyles } from "@material-ui/styles";
-import { CurrencyHeader } from "components/currencyCalculator";
 
 const useStyles = makeStyles({
   millionaire: {
@@ -40,7 +40,15 @@ const useStyles = makeStyles({
     flexDirection: "column",
     fontFamily: "Inter",
     background: "#FFF8F4",
-
+  },
+  currencyCalculator: {
+    width: "100%",
+    height: "100vh",
+    display: "flex",
+    flexDirection: 'column',
+    justifyContent: "center",
+    alignItems: "center",
+    background: "#f1f5f9",
   },
   container: {
     width: "100%",
@@ -91,7 +99,9 @@ const Projects = () => {
           </div>
         </Route>
         <Route exact path="/calculator">
-            <CurrencyHeader />
+          <div className={classes.currencyCalculator}>
+          <CurrencyCalculator />
+          </div>
         </Route>
       </Switch>
     </Router>

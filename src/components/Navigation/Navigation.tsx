@@ -28,12 +28,13 @@ export const Navigation = () => {
         Millionaire
       </NavLink>
       /
+      {" "}
       <NavLink exact to="/headway" activeStyle={{ color: "#FF8B37" }}>
         Landing
       </NavLink>
-      /
+      {" "}/
       <NavLink exact to="/calculator" activeStyle={{color: "#FF8b37"}} >
-        Calculator
+        Currency calculator
       </NavLink>
     </div>
   );

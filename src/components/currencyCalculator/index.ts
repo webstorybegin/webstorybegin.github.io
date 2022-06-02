@@ -1,2 +1,3 @@
-export * from './CurrencyHeader';
-export * from './Converting';
+export * from './CurrencyCalculator';
+export * from './Header';
+export * from './Converter';
