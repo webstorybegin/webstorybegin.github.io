@@ -14,6 +14,7 @@ import {
   Footer,
 } from "components/headway";
 import { CurrencyCalculator } from "components/currencyCalculator";
+import { FormikForm } from "components/FormikForm/FormikForm";
 import { PrimaryButton } from "components/headway/ui";
 
 import useSound from "use-sound";
@@ -45,10 +46,17 @@ const useStyles = makeStyles({
     width: "100%",
     height: "100vh",
     display: "flex",
-    flexDirection: 'column',
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     background: "#f1f5f9",
+  },
+  formikForm: {
+    width: '100%',
+    minHeight: '100vh',
+    backgroundImage: 'linear-gradient(257deg, #f59c07, #f57507)',
+    paddingTop: 100,
+    fontFamily: 'Roboto, sans-serif'
   },
   container: {
     width: "100%",
@@ -100,7 +108,12 @@ const Projects = () => {
         </Route>
         <Route exact path="/calculator">
           <div className={classes.currencyCalculator}>
-          <CurrencyCalculator />
+            <CurrencyCalculator />
+          </div>
+        </Route>
+        <Route exact path="/formikForm">
+          <div className={classes.formikForm}>
+            <FormikForm />
           </div>
         </Route>
       </Switch>

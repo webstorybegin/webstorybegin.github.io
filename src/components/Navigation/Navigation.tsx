@@ -11,11 +11,11 @@ const useStyles = makeStyles({
     zIndex: 100,
     "& a": {
       color: "#000",
-      marginRight: 5,
-      "&:last-child": {
-        marginLeft: 5,
-      },
     },
+    "& span": {
+      border: '1px solid #e3e3e3',
+      margin: '0 15px',
+    }
   },
 });
 
@@ -27,14 +27,17 @@ export const Navigation = () => {
       <NavLink exact to="/millionaire" activeStyle={{ color: "#FF8B37" }}>
         Millionaire
       </NavLink>
-      /
-      {" "}
+      <span />
       <NavLink exact to="/headway" activeStyle={{ color: "#FF8B37" }}>
         Landing
       </NavLink>
-      {" "}/
+      <span />
       <NavLink exact to="/calculator" activeStyle={{color: "#FF8b37"}} >
         Currency calculator
+      </NavLink>
+      <span />
+      <NavLink exact to="/formikForm" activeStyle={{color: "#ffffff"}} >
+        Formik form
       </NavLink>
     </div>
   );
