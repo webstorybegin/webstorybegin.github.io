@@ -81,11 +81,10 @@ const useStyles = makeStyles({
     display: "flex !important",
     alignItems: "center",
   },
-  textArea: {
-    height: 180,
+  "& input[type='select']": {
+    height: '180px !important',
     width: "100%",
     marginTop: 15,
-    padding: "15px 20px",
     fontSize: 18,
     background: "#ffffff",
     border: "1px solid #e2e2e2",
@@ -172,12 +171,6 @@ export const FormikForm = () => {
           id="amount"
           name="amount"
           type="number"
-        />
-        <MyTextInput
-          label="Валюта"
-          id="currency"
-          name="currency"
-          type="select"
         />
         <label htmlFor="currency">Валюта</label>
         <Field id="currency" name="currency" as="select">
