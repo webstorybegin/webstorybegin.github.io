@@ -1,5 +1,6 @@
 import { Formik, Form, Field, ErrorMessage, useField } from "formik";
 import * as Yup from "yup";
+import { Helmet } from "react-helmet";
 
 import { makeStyles } from "@material-ui/styles";
 
@@ -82,7 +83,7 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   "& input[type='select']": {
-    height: '180px !important',
+    height: "180px !important",
     width: "100%",
     marginTop: 15,
     fontSize: 18,
@@ -163,6 +164,10 @@ export const FormikForm = () => {
       onSubmit={(values) => console.log(JSON.stringify(values, null, 2))}
     >
       <Form className={classes.form}>
+        <Helmet>
+          <meta name="registration form" content="registration" />
+          <title>Formik registration form</title>
+        </Helmet>
         <h2>Отправить пожертвование</h2>
         <MyTextInput label="Ваше имя" id="name" name="name" type="text" />
         <MyTextInput label="Ваша почта" id="email" name="email" type="email" />

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Helmet } from 'react-helmet';
 
 import { makeStyles } from "@material-ui/styles";
 import { Header } from "./Header";
@@ -77,6 +78,13 @@ export const CurrencyCalculator = () => {
 
   return (
     <div className={classes.container}>
+      <Helmet>
+        <meta 
+          name="description"
+          content="app currency calculator"
+        />
+        <title>Currency calculator</title>
+      </Helmet>
       <Header currentCourse={currentCourse} />
       <Converter
         currencyOptions={currencyOptions}

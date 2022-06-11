@@ -7,6 +7,12 @@ const useStyles = makeStyles({
     fontFamily: "Roboto,HelveticaNeue,Arial,sans-serif",
     textAlign: "center",
     borderRadius: 5,
+    "& span": {
+      display: 'inline-block',
+      fontSize: 15,
+      marginBottom: 10,
+      color: 'red',
+    },
     "& h1, h2": {
       fontSize: 16,
       marginBottom: 5,
@@ -23,6 +29,7 @@ export const Header = ({ currentCourse }) => {
 
   return (
     <div className={classes.header}>
+      <span>The api key is obsolete. Implementation <br /> in my githab</span>
       <h1>Сurrent course on {currentCourse?.updated}</h1>
       <h2>1 Ukrainian hryvnia</h2>
       <p>

@@ -1,5 +1,5 @@
 import { data } from "assets/data/data";
-
+import { Helmet } from "react-helmet";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
@@ -40,6 +40,10 @@ export const Header = () => {
 
   return (
     <div className={classes.header}>
+      <Helmet>
+        <meta name="landing" content="landing page" />
+        <title>Headway landing</title>
+      </Helmet>
       <div className={classes.logo}>
         <a href="*" target="_blank">
           <img src={logo.src} alt={logo.alt} />

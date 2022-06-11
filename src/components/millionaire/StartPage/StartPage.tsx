@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { data } from "assets/data/data";
+import { Helmet } from 'react-helmet';
 
 import { PrimaryButton } from "components/millionaire/ui";
 
@@ -57,6 +58,13 @@ export const StartPage: FC<IStartPage> = ({ setStart }) => {
 
   return (
     <div className={classes.root}>
+      <Helmet>
+        <meta 
+          name="game"
+          content="this page - game"
+        />
+        <title>Millionaire game</title>
+      </Helmet>
       <img src={src} alt={alt} />
       <div className={classes.rootItem}>
         <h1 className={classes.mainTitle}>{title}</h1>
